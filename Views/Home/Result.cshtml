@@ -9,4 +9,12 @@
 }
 
 <h1>Welcome @Model.FirstName @Model.LastName</h1>
-<p>Your email address is listed as @Model.Email and your password is @Model.Password</p>
+<p>Your email address is listed as @Model.Email</p>
+<p>Enjoy a 10% discount on @Model.Flavor Lattes</p>
+
+@{
+    if(Model.Lactose)
+    {
+        <p>We will prepare your drinks with Oat Milk!</p>
+    }
+}

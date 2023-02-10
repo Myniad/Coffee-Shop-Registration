@@ -7,12 +7,32 @@
 <form asp-method="post" asp-action="result">
     <p>Enter your first name:</p>
     <input type="text" name="FirstName" />
+
     <p>Enter your last name:</p>
     <input type="text" name="LastName" />
+
     <p>Enter your email:</p>
     <input type="text" name="Email" />
+
     <p>Enter your password:</p>
     <input type ="password" name="Password" />
+
+    <p>Are you lactose intollerant?</p>
+    <input type="checkbox" name="Lactose" value="true" />
+
+    <p>Please select your favorite Latte Flavor</p>
+    <select name="Flavor">
+        <option value="Vanilla">Vanilla</option>
+        <option value="Caramel">Caramel</option>
+        <option value="Cinnamon">Cinnamon</option>
+        <option value="Strawberry">Strawberry</option>
+        <option value="White Chocolate Mocha">White Chocolate Mocha</option>
+        <option value="Hazelnut">Hazelnut</option>
+        <option value="Peppermint">Peppermint</option>
+        <option value="Pumpkin Spice">Pumpkin Spice</option>
+    </select>
+
+
     <p></p>
     <input type="submit" class="btn btn-primary"/>
 
